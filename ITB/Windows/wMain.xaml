@@ -1,0 +1,33 @@
+﻿<Window x:Class="ITB.Windows.wMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITB.Windows"
+        mc:Ignorable="d"
+        Title='ООО "ИТБ"' 
+        MinHeight="450" MinWidth="800" Height="450" Width="800" WindowStartupLocation="CenterScreen" Icon="/icon/m1000x1000.jpg">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="298*"/>
+            <RowDefinition Height="121*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="WidthPoint" Width="Auto" MinWidth="216"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" BorderBrush="Silver" BorderThickness="0,0,1,0" Background="#ccffff" Grid.RowSpan="3"/>
+        <StackPanel x:Name="spMenu" Width="Auto" MinWidth="155" MaxWidth="250" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2">
+            <Button x:Name="General" Style="{DynamicResource MainLeftButton}" Content="Главная" FontWeight="Bold" Click="Menu_Click"/>
+            <Button x:Name="Sales" Style="{DynamicResource MainLeftButton}" Content="Каталог" FontWeight="Bold" Click="Menu_Click"/>
+            <Button x:Name="Clients" Style="{DynamicResource MainLeftButton}" Content="Данные о клиентах" FontWeight="Bold" Click="Menu_Click"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" Height="121" Grid.Row="2">
+            <Image
+            Source="/picter/лого_итб.png" Height="121" Margin="0,0,1,0" />
+        </StackPanel>
+        <Frame x:Name="frmMain" Grid.Row="1" Grid.Column="1" NavigationUIVisibility="Hidden" Focusable="False" IsTabStop="False" Content="" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="66a1984e58104ae685f4e7de1d6f7757" Name="Diagram1">
+        <EntityTypeShape EntityType="Practika_VModel.Client" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Practika_VModel.Price" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Practika_VModel.Role" Width="1.5" PointX="2.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Practika_VModel.Sales" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Practika_VModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Practika_VModel.User" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="Practika_VModel.FK_Sales_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="Practika_VModel.FK_Sales_Price" ManuallyRouted="false" />
+        <AssociationConnector Association="Practika_VModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
